@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
+
+html, body {
+  height:100%;
+  padding:0;
+  margin:0;
+  font-family: Raleway,sans-serif;
+  color:#FFF;
+}
+h1 {
+  margin:0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+  letter-spacing: -4px;
+  font-size:100px;
+  font-weight:700;
+  text-transform:uppercase;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+}
+h1::before, h1::after {
+    width: 220px;
+    height: 1px;
+    border-top:4px double #FFF;
+    content:"";
+    display:block;
+    margin:20px auto;
+}
+header {
+  height: calc(100% - 65px);
+  background:#333;
+  
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  perspective-origin: center bottom;
+}
+.hero {
+  position:relative;
+  background:#333 url(http://jstougaard.com/assets/images/bg-hero2.jpg) no-repeat center center;
+  background-size:cover;
+  height: 100%;
+  width:100%;
+  
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  
+  display:table;
+}
+.hero .overlay {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:50%;
+  left:0;
+  right:0;
+  opacity:0;
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+}
+
+nav {
+  background:#171717;
+  height:65px;
+}
+nav.fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+.sticky-wrapper {
+  height:65px;
+}
+nav ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+nav ul li {
+  display:inline-block;
+}
+nav ul a {
+  height:65px;
+  line-height:65px;
+  padding:10px 15px;
+  color:#A1A1A1;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration:none;
+}
+nav ul a:hover {
+  color:white;
+  font-size: 15px;
+}
+
+section {
+  height: auto;
+  width:100%;
+  display:table;
+}
+section#item1 {
+  background:#006ca3;
+}
+section#item2 {
+  background:#00a69a;
+}
+
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 96%;
+	margin-left: 2%;
+	color: black;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+input[type="text"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="password"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+
+body {
+  background: url(https://dl.dropboxusercontent.com/u/23299152/Wallpapers/wallpaper-22705.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-card {
+  padding: 40px;
+  width: 274px;
+  background-color: #F7F7F7;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.login-card h1 {
+  font-weight: 200;
+  text-align: center;
+  font-size: 2.3em;
+  color: black;
+}
+
+.login-card input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.login-card input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.login-card input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.login {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.login-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.login-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.login-card a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+}
+
+.login-card a:hover {
+  opacity: 1;
+}
+
+.login-help {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
