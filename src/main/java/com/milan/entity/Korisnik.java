@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
+@Table(name = "sampledb")
 public class Korisnik {
 
 	@Id
