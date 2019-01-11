@@ -1,11 +1,9 @@
 # springbootRestJspApp
-Spting boot project with REST and JSP
-Ovo je prosta spring boot aplikacija gde se koristi CRUD Repository i JSP za prikaz a treba da pokaze
-samo kako se ove tehnologije medjusobno koriste.
 
 ### Quick description
 * This is Spring boot application that use MySQL for storing data and Java Servlet Page (JSP) for presentation. Although it is not used Spring boot Security, admin part of application is still secured using Session (after every unauthorised request application redirect to login page).
 * This is simple application with simple CRUD operations.
+* The purpose of this application is to show how to use spring boot and JSP togeder.
 * Also, this is Single page aplication (SPA) – although the application has several different views, there are only two html pages in which JSP code is embedded.
 
 ### Used thechnologies
